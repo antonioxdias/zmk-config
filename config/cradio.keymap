@@ -13,12 +13,17 @@
   tapping_term_ms = <200>;
 };
 
+#define QW 0
+#define NN 1
+#define SY 2
+#define FM 3
+
 / { 
 
 	keymap {
 		compatible = "zmk,keymap";
                 
-		default_layer {
+		QW {
 			bindings = <
 				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
 				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
@@ -27,7 +32,7 @@
 			>;
 		};
 
-		left_layer {
+		NN {
 			bindings = <
 				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
 				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
@@ -36,7 +41,7 @@
 			>;
 		};
 		
-		right_layer {
+		SY {
 			bindings = <
 				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
 				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
@@ -45,7 +50,7 @@
 			>;
 		};	
 		
-		tri_layer {
+		FM {
 			bindings = <
 				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
 				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
