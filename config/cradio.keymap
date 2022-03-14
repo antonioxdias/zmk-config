@@ -15,43 +15,43 @@
 
 / { 
 
-        keymap {
-                compatible = "zmk,keymap";
+	keymap {
+		compatible = "zmk,keymap";
                 
-       	default_layer {
-		bindings = <
-		&kp Q       &kp W       &kp E       &kp R       &kp T 			&kp Y       &kp U       &kp I       &kp O       &kp P 
-		&mt LCTRL A &mt LSFT S  &mt LGUI D  &mt LALT F  &kp G 		  &mt LALT H  &mt RGUI J  &mt RSFT K  &mt RCTRL L &kp SEMI
-		&kp Z       &kp X       &kp C       &kp V       &kp B		    &kp N       &kp M       &kp CMMA    &kp DOT     &kp MINUS
-          				                    	&kp BSPC    &lt 3 RET 	&lt 2 SPC  &lt 1 TAB
-		>;
+		default_layer {
+			bindings = <
+				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
+				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
+				&none       &none         &none       &none       &none   	  &none       &none       &none     &none      &none
+																						&none     &none   		&none      &none 
+			>;
 		};
 
-       	left_layer {
-		bindings = <
-		&none       &N7         &kp N8      &kp N9      &kp N0 			&kp HOME    &kp PG_UP   &kp PG_DN   &kp END     &reset
-		&none       &N4         &kp N5      &kp N6      &kp N0 		 	&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
-		&none       &N1         &kp N2      &kp N3      &kp N0  	  &none       &none       &kp CMMA    &kp DOT     &none
-          				                    	&kp BSPC    &kp RET  		&kp SPC     &trans 
-		>;
+		left_layer {
+			bindings = <
+				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
+				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
+				&none       &none         &none       &none       &none   	  &none       &none       &none     &none      &none
+																						&none     &none   		&none      &none 
+			>;
 		};
 		
 		right_layer {
-		bindings = <
-		&kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT		&kp AMPS    &kp SLASH   &kp SQT     &kp DQT     &kp STAR 
-		&kp PIPE    &kp DLLR    &kp EQUAL   &kp LPAR    &kp LBRC	 	&kp RBRC    &kp RPAR    &kp QMARK   &kp EQUAL   &kp PLUS
-		&kp BSLH    &none       &none       &kp LT      &kp LBKT	  &kp RBKT    &kp GT      &kp TILDE   &kp GRAVE   &kp CARET
-          				                    	&kp BSPC    &kp RET  		&trans      &kp TAB
-		>;
+			bindings = <
+				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
+				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
+				&none       &none         &none       &none       &none   	  &none       &none       &none     &none      &none
+																						&none     &none   		&none      &none 
+			>;
 		};	
 		
 		tri_layer {
-		bindings = <
-		&reset      &kp F7      &kp F8      &kp F9      &kp F10 		&kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP &kp C_PP  &bt BT_CLR
-		&kp CAPS    &kp F4      &kp F5      &kp F6      &kp F11	   	&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
-		&kp PSCRN   &kp F1      &kp F2      &kp F3      &kp F12	    &none       &bt BT_PRV  &bt BT_NXT  &none       &none
-          				                    	&kp DEL     &trans     	&none       &kp ESC 
-		>;
+			bindings = <
+				&none       &none         &none       &none       &none  			&none     &none    &none    &none      &none
+				&none       &none         &none       &none       &none  		 	&none     &none     &none       &none    &none
+				&none       &none         &none       &none       &none   	  &none       &none       &none     &none      &none
+																						&none     &none   		&none      &none 
+			>;
 		};	
         
 	};
