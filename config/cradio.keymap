@@ -18,6 +18,22 @@
 #define SY 2
 #define FM 3
 
+/ {
+    macros {
+        log: log {
+            label = "Log";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+						wait-ms = <40>;
+						tap-ms = <40>;
+						bindings
+								= <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR>
+								, <&kp LEFT>
+								;
+        };
+    };
+};
+
 / { 
 
 	keymap {
@@ -26,7 +42,7 @@
 		QW {
 			bindings = <
 				&kp Q       &kp W       &kp E       &kp R       &kp T 			&kp Y       &kp U       &kp I       &kp O       &kp P 
-				&mt LCTRL A &mt LSFT S  &mt LGUI D  &mt LALT F  &kp G 		  &kp H			  &mt RALT J  &mt RGUI K  &mt RSFT L 	&mt RCTRL SEMI
+				&mt LCTRL A &mt LSFT S  &mt LGUI D  &mt LALT F  &kp G 		  &kp H			  &mt LALT J  &mt RGUI K  &mt RSFT L 	&mt RCTRL SEMI
 				&kp Z       &kp X       &kp C       &kp V       &kp B		    &kp N       &kp M       &kp CMMA    &kp DOT     &kp MINUS
 																						&kp BSPC    &lt FM RET	&lt SY SPC  &lt NN TAB
 			>;
@@ -53,7 +69,7 @@
 		FM {
 			bindings = <
 				&reset      &kp F7      &kp F8      &kp F9      &kp F10 		&kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP &kp C_PP  &bt BT_CLR
-				&kp CAPS    &kp F4      &kp F5      &kp F6      &kp F11	   	&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
+				&kp CAPS    &kp F4      &kp F5      &kp F6      &kp F11	   	&none    		&none    		&none       &log   			&none
 				&kp PSCRN   &kp F1      &kp F2      &kp F3      &kp F12	    &none       &bt BT_PRV  &bt BT_NXT  &none       &none
 																						&kp DEL     &trans     	&none       &kp ESC 
 			>;
