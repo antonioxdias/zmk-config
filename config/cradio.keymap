@@ -19,19 +19,19 @@
 #define FM 3
 
 / {
-    macros {
-        log: log {
-            label = "Log";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-						wait-ms = <40>;
-						tap-ms = <40>;
-						bindings
-								= <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR>
-								, <&kp LEFT>
-								;
-        };
-    };
+  macros {
+    log: log {
+      label = "Log";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+			wait-ms = <40>;
+			tap-ms = <40>;
+			bindings
+				= <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR>
+				, <&kp LEFT>
+				;
+      };
+   };
 };
 
 / { 
