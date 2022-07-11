@@ -81,7 +81,7 @@
 		SY {
 			bindings = <
 				&kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT		&kp AMPS    &kp SLASH   &kp SQT     &kp DQT     &kp STAR 
-				&kp PIPE    &literal    &kp arrowf  &kp LPAR    &kp LBRC	 	&kp RBRC    &kp RPAR    &kp QMARK   &kp EQUAL   &kp PLUS
+				&kp PIPE    &literal    &arrowf  		&kp LPAR    &kp LBRC	 	&kp RBRC    &kp RPAR    &kp QMARK   &kp EQUAL   &kp PLUS
 				&kp BSLH    &none       &none       &kp LT      &kp LBKT	  &kp RBKT    &kp GT      &kp TILDE   &kp GRAVE   &kp CARET
 																						&kp BSPC    &kp RET  		&trans      &kp TAB
 			>;
